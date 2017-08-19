@@ -1,0 +1,32 @@
+<p>
+  <strong>Título:</strong>
+  <%= @livro.titulo %>
+</p>
+
+<%= image_tag @livro.imagem %>
+ 
+<p>
+  <strong>Autor:</strong>
+  <%= @livro.autor %>
+</p>
+
+
+<p>
+  <strong>Edição:</strong>
+  <%= @livro.edicao %>
+</p>
+ 
+<p>
+  <strong>Condição:</strong>
+  <%= @livro.condicao %>
+</p>
+
+
+<p>
+  <strong>Descrição:</strong>
+  <%= @livro.descricao %>
+</p>
+
+<%= link_to 'Editar', edit_livro_path(@livro) %>
+ 
+<%= link_to 'Voltar', livros_path %>
